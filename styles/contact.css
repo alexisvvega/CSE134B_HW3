@@ -1,0 +1,159 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS root Variables */
+:root {
+    --primary-color: #0d2950;
+    --secondary-color: #7c8bdc;
+    --text-color: #ffffff;
+    --background-color: #f4f4f4;
+    --input-border: #cccccc;
+}
+
+/* Apply global styles */
+html, body {
+    width: 100%;
+    font-family: "Times New Roman", sans-serif, "Arial", "Courier New";
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-size: 1rem; 
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+/* Logo */
+.logo a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Navigation */
+.nav-menu {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    color: var(--secondary-color);
+}
+
+/* Contact Form */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 2rem;
+}
+
+fieldset {
+    border: 2px solid var(--primary-color);
+    background: #fff;
+    max-width: 40rem;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Elements */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid var(--input-border); 
+    border-radius: 0.75rem;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 10rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Social Media Icons */
+address img {
+    margin: 0.5rem;
+    transition: transform 0.3s;
+}
+
+address img:hover {
+    transform: scale(1.2);
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-section {
+        gap: 2rem;
+    }
+
+    fieldset {
+        padding: 2rem 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}

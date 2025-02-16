@@ -1,0 +1,126 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS root Variables */
+:root {
+    --primary-color: #0d2950;
+    --secondary-color: #7c8bdc;
+    --text-color: #ffffff;
+    --background-color: #f4f4f4;
+    --input-border: #cccccc;
+}
+
+/* Apply global styles */
+html, body {
+    width: 100%;
+    font-family: "Times New Roman", sans-serif, "Arial", "Courier New";
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-size: 1rem; 
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+/* Logo */
+.logo a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Navigation */
+.nav-menu {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    color: var(--secondary-color);
+}
+
+/* Main Content */
+.portfolio-content {
+    padding: 2rem;
+    border-radius: 1%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.project {
+    width: 80%;
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-radius: 1%;
+    box-shadow: var(--box-shadow);
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: #2980b9;
+    margin-bottom: 0.5rem;
+}
+
+.project-details {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.project-meta {
+    margin-top: 1rem;
+}
+
+.project-meta dt {
+    font-weight: bold;
+    color: #34495e;
+}
+
+.project-meta dd {
+    margin: 0 0 0.5rem 1rem;
+    color: #7f8c8d;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
