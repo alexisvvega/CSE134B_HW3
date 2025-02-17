@@ -121,6 +121,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
+    table-layout: auto;
+    word-wrap: break-word;
 }
 
 table, th, td {
@@ -177,6 +179,16 @@ footer {
 
 /* On smaller screens (max-width: 768px) */
 @media (max-width: 768px) {
+    /* Add responsiveness to table content */
+    table {
+        width: 100%;
+        overflow-x: auto;
+        display: block; 
+    }
+    /* Reduce padding on table cells for smaller screens */
+    th, td {
+        font-size: 0.9rem; 
+    }
     .nav-menu {
         display: none; 
     }
