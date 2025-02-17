@@ -40,6 +40,16 @@
           <p>
             As a developer for <abbr title="Triton Software Engineering">TSE</abbr>, I am working on a mobile app for Psyches of Color, a nonprofit organization dedicated to raising mental health awareness for Black and Latinx communities.
           </p>
+          <picture>
+            <!-- Large image for desktops -->
+            <source srcset="tse_header.png" media="(min-width: 1024px)">
+            <!-- Medium image for tablets -->
+            <source srcset="tse_image.png" media="(min-width: 600px)">
+            <!-- Small image for mobile -->
+            <source srcset="tse_logo.png" media="(max-width: 599px)">
+            <!-- Fallback image -->
+            <img src="tse-logo-yellow.png" alt="Psyches of Color app">
+          </picture>
           <ul class="project-details">
             <li>Developing the app using <ins>React Native, Node.js, Express.js, and MongoDB.</ins></li>
             <li>Implementing secure environment variables for sensitive data handling.</li>
