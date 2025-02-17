@@ -34,6 +34,9 @@
     --text-color: #ffffff;
     --background-color: #f4f4f4;
     --input-border: #cccccc;
+    --card-title-color: color-mix(in oklab, #6a5acd 50%, rgb(33, 161, 196));
+    --project-title: color(display-p3 15% 30% 50%);
+
 }
 
 /* Apply global styles */
@@ -94,7 +97,7 @@ html, body {
 .section-title {
     text-align: center;
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--project-title);
     margin-bottom: 1.5rem;
 }
 
@@ -116,7 +119,7 @@ html, body {
 
 .project-title {
     font-size: 1.5rem;
-    color: #2980b9;
+    color: var(--card-title-color);
     margin-bottom: 0.5rem;
 }
 

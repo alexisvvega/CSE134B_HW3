@@ -151,6 +151,14 @@ address img:hover {
     background-color: var(--secondary-color);
     border-radius: 50%;
 }
+address:has(a) a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+address:has(a) a:hover {
+    color:#4861ac;
+}
 
 /* Footer */
 footer {
